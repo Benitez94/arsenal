@@ -1,0 +1,20 @@
+.nav-link {
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    color: #2ecc71; /* Cambia el color del encabezado según tus preferencias */
+  }
+  
+  

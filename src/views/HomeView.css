@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  
+  .grid-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .player-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .selected-player-image {
+    max-width: 100%; 
+    max-height: 300px; 
+    object-fit: cover;
+    border-radius: 8px; 
+  }
+  
+  .player-info {
+    text-align: center;
+  }
+  
+  .player-name {
+    font-weight: bold;
+  }
+  
+  
