@@ -44,18 +44,45 @@ export default class HelloWorld extends Vue {
 
 
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+
+body {
+  font-family: Arial, sans-serif;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.grid-item {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform .3s ease;
 }
-a {
-  color: #42b983;
+
+.grid-item:hover {
+  transform: scale(1.05);
 }
+
+.player-image {
+  width: 100%;
+  height: auto;
+}
+
+.selected-player-image {
+  width: 100%;
+  height: auto;
+}
+
+.player-info {
+  padding: 8px;
+}
+
+.player-name {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
 </style>
