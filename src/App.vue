@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <nav class="barra-nav">
-      <router-link to="/">Arsenal</router-link>
-    </nav>
+    <header class="encabezado">
+      <div class="centrado">
+        <img src="./assets/logo.png" alt="Arsenal" width="200" height="220" />
+        <nav class="barra-nav">
+        </nav>
+      </div>
+    </header>
     <router-view/>
   </div>
 </template>
@@ -26,22 +30,19 @@ export default {
   padding: 10px;
 }
 
-.barra-nav {
+.encabezado {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 50px;
-  background-color: #e20038;
+  width: 100%;
+  height: 200px;
+  background-color: #c90000;
+  flex-wrap: nowrap;
 }
 
-.barra-nav a {
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.barra-nav a:hover {
-  color: rgb(0, 0, 0);
+.encabezado img {
+  max-height: 180px;
+  object-fit: contain;
 }
 
 </style>
