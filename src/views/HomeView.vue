@@ -35,7 +35,7 @@
   idPlayer: string;
   strPlayer: string;
   strPosition: string;
-  strThumb: string;
+  strCutout: string;
   strNationality: string;
   strTeam: string;
   dateBorn: string; 
